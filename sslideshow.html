@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title> Responsive Menu </title>
+<title> Slideshow w/ JS </title>
 <link rel="stylesheet" href="css/shamburger.css"
 <meta name="author" content="Harry Moore - Bedford College">
 <link rel="icon" type="image/gif" href="assets/images/iconcnf.png">
@@ -15,6 +15,15 @@
             x.className = "topnav";
         }
     }
+    function fposition1(){
+        document.slide.src = "assets/images/1.png";
+    }
+    function fposition2(){
+        document.slide.src = "assets/images/2.png";
+    }
+    function fposition3(){
+        document.slide.src = "assets/images/3.png";
+    }
 </script>
 </head>
 <body>
@@ -22,14 +31,20 @@
         <div class="navcenter1">
             <div class="topnav" id="myTopnav">
                 <a href="#" style="font-size: 16px;" class="icon" onclick="myFunction()">&#9776;</a>
-                <a class="active" href="shamburgermenu.html"> HOME </a>
-                <a href="sslideshow.html"> SLIDESHOW </a>
+                <a href="shamburgermenu.html"> HOME </a>
+                <a class="active" href="sslideshow.html"> SLIDESHOW </a>
                 <a href="soverflow.html"> OVERFLOW </a>
                 <a href="smediaq.html"> MEDIA QUERY </a>
             </div>
         <div id="dmainbody">
-            <h1>Responsive menu</h1>
+            <h1>Slideshow with JavaScript</h1>
         </div>
+        <div class="dbanner">
+            <img name="slide" src="assets/images/1.png" width="100%" /><br>
+            <a class="myicons" href="#" onclick="fposition1()" >&#8226;</a>
+            <a class="myicons" href="#" onclick="fposition2()" >&#8226;</a>
+            <a class="myicons" href="#" onclick="fposition3()" >&#8226;</a>
+            </div>
     </div>
 </div>
 </body>
