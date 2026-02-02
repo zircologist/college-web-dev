@@ -1,0 +1,65 @@
+body{
+    background-color: black;
+    color: white;
+}
+
+.navcenter1{
+    margin: 0;
+    background-color: black;
+    padding-right: 5px;
+}
+
+.active {
+    border: 1px solid #71ddd0;
+    border-radius: 5px;
+    color: black
+}
+
+.topnav {
+    overflow: hidden;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+a{text-decoration: none;}
+
+.topnav a{
+    float: left;
+    display: block;
+    color: #2e7575;
+    padding: 11px;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: Helvetica;
+}
+
+.topnav a:hover{
+    border: 1px solid #c6dd71;
+    border-radius: 5px;
+    background-color: rgb(245, 238, 180);
+    color: black;
+}
+
+@media screen and (max-width: 600px) {
+    .topnav a {display: none;}
+
+    .topnav a.icon {
+        float: left;
+        display: block;
+    }
+
+    .topnav.responsive {position: relative;}
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+}
+
+.myicons {
+    font-size: 40px;
+    color: #2e7575;
+}
+
+.myicons:hover {color: white;}

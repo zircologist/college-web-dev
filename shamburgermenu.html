@@ -9,7 +9,7 @@
 <script>
     function myFunction() {
         var x = document.getElementById("myTopnav");
-        if (x.className === "myTopnav") {
+        if (x.className === "topnav") {
             x.className += " responsive";
         } else {
             x.className = "topnav";
@@ -19,11 +19,12 @@
 </head>
 <body>
     <div class="container">
-        <div class="container1">
+        <div class="navcenter1">
             <div class="topnav" id="myTopnav">
                 <a href="#" style="font-size: 16px;" class="icon" onclick="myFunction()">&#9776;</a>
                 <a class="active" href="shamburgermenu.html"> HOME </a>
-                <a href="soverflow.html"> MEDIA QUERY </a>
+                <a href="soverflow.html"> OVERFLOW </a>
+                <a href="smediaq.html"> MEDIA QUERY </a>
             </div>
         <div id="dmainbody">
             <h1>Responsive menu</h1>
